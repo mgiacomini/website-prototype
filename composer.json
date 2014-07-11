@@ -1,0 +1,26 @@
+{
+    "name": "mgiacomini/website-prototype",
+    "homepage": "http://github.com/mgiacomini/website-prototype",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mauricio Giacomini Girardello",
+            "email": "mauriciogiacomini4@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "v1.2.1",
+        "doctrine/dbal": "2.2.*",
+        "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev",
+	"twig/twig": ">=1.8,<2.0-dev",
+	"symfony/twig-bridge": "~2.3",
+	"symfony/validator": "~2.3",
+	"symfony/security": "~2.3",
+	"symfony/translation": "~2.3"
+    },
+    "require-dev":{
+	"phpunit/phpunit": "4.1.3"
+    },
+    "minimum-stability": "stable",
+    "version": "1.0.0"
+}
