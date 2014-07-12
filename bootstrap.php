@@ -1,8 +1,4 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
-ini_set("auto_detect_line_endings", true);
-ini_set('display_errors', 1);
-
 $loader = require __DIR__ . '/vendor/autoload.php';
 $loader->add('mgiacomini', __DIR__ . '/src');
 
@@ -33,3 +29,10 @@ $app['config'] = $application->share(function(){
 });
 
 $application->register(new Silex\Provider\ServiceControllerServiceProvider());
+
+// php preferences
+date_default_timezone_set((string) $app['config']->time_zone);
+ini_set("auto_detect_line_endings", true);
+ini_set('display_errors', (int) $app['config']->display_errors);
+
+
